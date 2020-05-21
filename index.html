@@ -1,230 +1,356 @@
 <!DOCTYPE html>
-    <html lang="zxx">
+<html lang="zxx">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
-        <title>Travel project</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <title>Travel project</title>
+</head>
 
-    <body>
-        <!-- Header section start -->
-        <header class="header">
-            <div class="container">
-                <div class="header__media">
-                    <div class="header__info">
-                         <a href="" class="header__link">Instagram</a>
-                    </div>
-                    <div class="header__info">
-                         <a href="" class="header__link">Twitter</a>
-                    </div>
-                    <div class="header__info">
-                         <a href="" class="header__link">Facebook</a>
-                    </div>
+<body>
+    <!-- Header section start -->
+    <header class="header">
+        <div class="container">
+            <div class="header__media">
+                <div class="header__info">
+                    <a href="" class="header__link">Instagram</a>
                 </div>
-                <div class="header__media-icons">
-                    <svg class="header__media-icon">
-                        <a href="https://www.instagram.com/" target="_blank"><use xlink:href="img/symbol-defs.svg#icon-instagram"></use></a>
-                    </svg>
-                     <svg class="header__media-icon">
-                        <use xlink:href="img/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                     <svg class="header__media-icon">
-                        <a href="https://www.facebook.com/" target="_blank"><use xlink:href="img/symbol-defs.svg#icon-facebook"></use></a>
-                    </svg>
-                </div> 
-                <nav class="nav">
-                    <ul class="nav__items">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#travel" class="nav__link">Travel</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__main-info">
-                    <h1 class="heading-1 margin-bottom-smallest">
-                        <span class="heading-1--main">Business&nbsp;Travel</span>
-                    </h1>
-                    <h3 class="heading-3 heading-3--white margin-bottom-smallest">
-                        <span class="heading-3--main">For entrepreneurs and freelancers</span>
-                    </h3>
-                    <button class="btn btn--light">MORE INFO</button>
+                <div class="header__info">
+                    <a href="" class="header__link">Twitter</a>
                 </div>
-           </div>
-     </header>
-     <!-- Header section end -->
-     <main>
+                <div class="header__info">
+                    <a href="" class="header__link">Facebook</a>
+                </div>
+            </div>
+            <div class="header__media-icons">
+                <svg class="header__media-icon">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                    </a>
+                </svg>
+                <svg class="header__media-icon">
+                    <use xlink:href="img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+                <svg class="header__media-icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <use xlink:href="img/symbol-defs.svg#icon-facebook"></use>
+                    </a>
+                </svg>
+            </div>
+            <nav class="nav">
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#travel" class="nav__link">Travel</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__main-info">
+                <h1 class="heading-1 margin-bottom-smallest">
+                    <span class="heading-1--main">Business&nbsp;Travel</span>
+                </h1>
+                <h3 class="heading-3 heading-3--white margin-bottom-smallest">
+                    <span class="heading-3--main">For entrepreneurs and freelancers</span>
+                </h3>
+                <button class="btn btn--light">MORE INFO</button>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+    <main>
         <!-- SECTION INFO start -->
         <section class="section-info" id="about">
-             <div class="container">
+            <div class="container">
                 <div class="section-info__body">
-                   <picture class="section-info__illustration margin-left-huge wow bounceInRight" data-wow-duration="2s">
-                            <source media="(max-width: 48rem)" srcset="img/info-section-small.png">
-                            <source media="(min-width: 50rem)" srcset="img/info-section.png">
-                            <img src="img/info-section.png" alt="Travel 1" class="section-info__img">
-                   </picture>
-                   <div class="section-info__block-text wow bounceInLeft" data-wow-duration="2s">
+                    <picture class="section-info__illustration margin-left-huge wow bounceInRight"
+                        data-wow-duration="2s">
+                        <source media="(max-width: 48rem)" srcset="img/info-section-small.png">
+                        <source media="(min-width: 50rem)" srcset="img/info-section.png">
+                        <img src="img/info-section.png" alt="Travel 1" class="section-info__img">
+                    </picture>
+                    <div class="section-info__block-text wow bounceInLeft" data-wow-duration="2s">
                         <h5 class="heading-5 margin-bottom-small">About us</h5>
-                        <h3 class="heading-3 heading-3--dark margin-bottom-medium">WE WILL TURN YOUR WORK INTO AN EXCITING JOURNEY.</h3>
+                        <h3 class="heading-3 heading-3--dark margin-bottom-medium">WE WILL TURN YOUR WORK INTO AN
+                            EXCITING JOURNEY.</h3>
                         <p class="section-info__paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Ac turpis egestas integer eget.Felis bibendum ut tristique et egestas quis ipsu. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium
+                            fusce. Ac turpis egestas integer eget.Felis bibendum ut tristique et egestas quis ipsu.
                         </p>
                         <p class="section-info__paragraph">
-                            sa massa ultricies mi quis hendrerit dolor magna. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Lectus arcu bibendum at varius. In massa tempor nec feugiat nisl. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Adipiscing elit ut aliquam purus. Nunc pulvinar sapien et ligula ullam
+                            sa massa ultricies mi quis hendrerit dolor magna. Facilisis leo vel fringilla est
+                            ullamcorper eget nulla facilisi etiam. Lectus arcu bibendum at varius. In massa tempor nec
+                            feugiat nisl. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.
+                            Adipiscing elit ut aliquam purus. Nunc pulvinar sapien et ligula ullam
                         </p>
                         <button class="btn btn--dark">MORE INFO</button>
                     </div>
                 </div>
             </div>
-         </section>
-         <!-- SECTION INFO end -->
+        </section>
+        <!-- SECTION INFO end -->
 
-         <!-- SECTION GALLERY start -->
+        <!-- SECTION GALLERY start -->
         <section class="section-gallery" id="travel">
             <div class="container">
-                <h2 class="heading-2 margin-bottom-small wow fadeInLeft" data-wow-duration="2s">PHOTOS OF OUR TRAVELS</h2>
+                <h2 class="heading-2 margin-bottom-small wow fadeInLeft" data-wow-duration="2s">PHOTOS OF OUR TRAVELS
+                </h2>
                 <p class="section-gallery__paragraph wow fadeInRight" data-wow-duration="2s" data-wow-delay=".3s">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore et dolore incididunt ut labore  ut labore
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore et dolore incididunt ut labore ut labore
                 </p>
-                 <div class="section-gallery__line margin-bottom-smallest">
+                <div class="section-gallery__line margin-bottom-smallest">
                     <figure class="section-gallery__image wow fadeInLeft" data-wow-delay=".4s">
                         <img src="img/gallery-1.png" alt="Image 1" class="section-gallery__img">
-                        <figcaption class="section-gallery__caption">Check this out</figcaption>
+                        <figcaption class="section-gallery__caption">
+                            <h2 class="section-gallery__title">
+                                Maldives
+                            </h2>
+                            <p class="section-gallery__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis assumenda nisi eius
+                                laboriosam debitis hic illum accusamus?
+                            </p>
+                            <a href="#" class="section-gallery__btn">Find Out More</a>
+                        </figcaption>
                     </figure>
                     <figure class="section-gallery__image wow fadeInUp" data-wow-delay=".4s">
                         <img src="img/gallery-2.png" alt="Image 2" class="section-gallery__img">
+                        <figcaption class="section-gallery__caption">
+                            <h2 class="section-gallery__title">
+                                Thailand
+                            </h2>
+                            <p class="section-gallery__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis assumenda nisi eius
+                                laboriosam debitis hic illum accusamus?
+                            </p>
+                            <a href="#" class="section-gallery__btn">Find Out More</a>
+                        </figcaption>
                     </figure>
                     <figure class="section-gallery__image wow fadeInRight" data-wow-delay=".4s">
                         <img src="img/gallery-3.png" alt="Image 3" class="section-gallery__img">
-                     </figure>
-                 </div>    
+                        <figcaption class="section-gallery__caption">
+                            <h2 class="section-gallery__title">
+                                Switzerland
+                            </h2>
+                            <p class="section-gallery__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis assumenda nisi eius
+                                laboriosam debitis hic illum accusamus?
+                            </p>
+                            <a href="#" class="section-gallery__btn">Find Out More</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
-                  <div class="section-gallery__line margin-bottom-smallest">  
-                     <figure class="section-gallery__image wow fadeInLeft" data-wow-delay=".5s">
+                <div class="section-gallery__line margin-bottom-smallest">
+                    <figure class="section-gallery__image wow fadeInLeft" data-wow-delay=".5s">
                         <img src="img/gallery-4.png" alt="Image 4" class="section-gallery__img">
-                     </figure>
-                     <figure class="section-gallery__image wow fadeInUp" data-wow-delay=".5s">
+                        <figcaption class="section-gallery__caption">
+                            <h2 class="section-gallery__title">
+                                Venice
+                            </h2>
+                            <p class="section-gallery__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis assumenda nisi eius
+                                laboriosam debitis hic illum accusamus?
+                            </p>
+                            <a href="#" class="section-gallery__btn">Find Out More</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="section-gallery__image wow fadeInUp" data-wow-delay=".5s">
                         <img src="img/gallery-5.png" alt="Image 5" class="section-gallery__img">
-                     </figure>
-                     <figure class="section-gallery__image wow fadeInRight" data-wow-delay=".5">
+                        <figcaption class="section-gallery__caption">
+                            <h2 class="section-gallery__title">
+                                Croatia
+                            </h2>
+                            <p class="section-gallery__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis assumenda nisi eius
+                                laboriosam debitis hic illum accusamus?
+                            </p>
+                            <a href="#" class="section-gallery__btn">Find Out More</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="section-gallery__image wow fadeInRight" data-wow-delay=".5">
                         <img src="img/gallery-6.png" alt="Image 6" class="section-gallery__img">
-                     </figure>
-                  </div>
+                        <figcaption class="section-gallery__caption">
+                            <h2 class="section-gallery__title">
+                                Monaco
+                            </h2>
+                            <p class="section-gallery__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis assumenda nisi eius
+                                laboriosam debitis hic illum accusamus?
+                            </p>
+                            <a href="#" class="section-gallery__btn">Find Out More</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
-                  <div class="section-gallery__line margin-bottom-larger">  
-                     <figure class="section-gallery__image wow fadeInLeft" data-wow-delay=".6s">
+                <div class="section-gallery__line margin-bottom-larger">
+                    <figure class="section-gallery__image wow fadeInLeft" data-wow-delay=".6s">
                         <img src="img/gallery-7.png" alt="Image 7" class="section-gallery__img">
-                     </figure>
-                     <figure class="section-gallery__image wow fadeInUp" data-wow-delay=".6s">
+                        <figcaption class="section-gallery__caption">
+                            <h2 class="section-gallery__title">
+                                USA
+                            </h2>
+                            <p class="section-gallery__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis assumenda nisi eius
+                                laboriosam debitis hic illum accusamus?
+                            </p>
+                            <a href="#" class="section-gallery__btn">Find Out More</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="section-gallery__image wow fadeInUp" data-wow-delay=".6s">
                         <img src="img/gallery-8.png" alt="Image 8" class="section-gallery__img">
-                     </figure>
-                     <figure class="section-gallery__image wow fadeInRight" data-wow-delay=".6s">
+                        <figcaption class="section-gallery__caption">
+                            <h2 class="section-gallery__title">
+                                Vietnam
+                            </h2>
+                            <p class="section-gallery__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis assumenda nisi eius
+                                laboriosam debitis hic illum accusamus?
+                            </p>
+                            <a href="#" class="section-gallery__btn">Find Out More</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="section-gallery__image wow fadeInRight" data-wow-delay=".6s">
                         <img src="img/gallery-9.png" alt="Image 9" class="section-gallery__img">
-                     </figure>
-                  </div>
+                        <figcaption class="section-gallery__caption">
+                            <h2 class="section-gallery__title">
+                                Copenhagen
+                            </h2>
+                            <p class="section-gallery__info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nobis assumenda nisi eius
+                                laboriosam debitis hic illum accusamus?
+                            </p>
+                            <a href="#" class="section-gallery__btn">Find Out More</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
-                  <div class="slider">
-                      <div class="slider__pages wow fadeInUp" data-wow-delay=".1s">
-                            <svg class="slider__icon">
-                                <use xlink:href="img/symbol-defs2.svg#icon-chevron-thin-left"></use>
-                            </svg>
-                            <div class="slider__numbers">
-                                  <span class="slider__numbers--light">01</span><span class="slider__numbers--dark">05</span>
-                            </div>
-                            <svg class="slider__icon">
-                                <use xlink:href="img/symbol-defs2.svg#icon-chevron-thin-right"></use>
-                            </svg>
-                      </div>
-                  </div>
+                <div class="slider">
+                    <div class="slider__pages wow fadeInUp" data-wow-delay=".1s">
+                        <svg class="slider__icon">
+                            <use xlink:href="img/symbol-defs2.svg#icon-chevron-thin-left"></use>
+                        </svg>
+                        <div class="slider__numbers">
+                            <span class="slider__numbers--light">01</span><span class="slider__numbers--dark">05</span>
+                        </div>
+                        <svg class="slider__icon">
+                            <use xlink:href="img/symbol-defs2.svg#icon-chevron-thin-right"></use>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </section>
-         <!-- SECTION GALLERY end -->
+        <!-- SECTION GALLERY end -->
 
-         <!-- SECTION TRAVEL OPPORTUNITIES start-->
-         <section class="section-travel-opportunities">
+        <!-- SECTION TRAVEL OPPORTUNITIES start-->
+        <section class="section-travel-opportunities">
             <div class="container">
-                    <h2 class="heading-2 margin-bottom-small wow fadeInLeft" data-wow-duration="2s">TRAVEL WITH OUR COMPANY</h2>
-                     <p class="section-travel-opportunities__paragraph wow fadeInRight" data-wow-duration="2s" data-wow-delay=".3s">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore   
-                    </p>
-                    <div class="section-travel-opportunities__body">
-                         <div class="section-travel-opportunities__opportunity">
-                            <figure class="section-travel-opportunities__image wow rotateInUpLeft" data-wow-duration="2s" data-wow-delay=".3s">
-                                <img src="img/travel-opportunities.png" alt="Travel Opportunity 1" class="section-travel-opportunities__img">
-                            </figure>
-                            <h4 class="heading-4 margin-bottom-medium margin-top-small wow fadeInLeft" data-wow-delay=".5s">COMFORTABLE PREMIUM CLASS ACCOMMODATIONS</h4>
-                            <p class="section-travel-opportunities__subtitle wow fadeInLeft" data-wow-delay=".7s">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et sdolore magna aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <h6 class="heading-6 wow fadeInLeft" data-wow-delay=".8s">VIEW PHOTOS</h6>
-                        </div>
-                        <div class="section-travel-opportunities__opportunity">
-                            <figure class="section-travel-opportunities__image wow rotateInUpRight" data-wow-duration="2s" data-wow-delay=".3s">
-                               <img src="img/travel-opportunities-2.png" alt="Travel Opportunity 2" class="section-travel-opportunities__img">
-                            </figure>
-                            <h4 class="heading-4 margin-bottom-medium margin-top-small wow fadeInRight" data-wow-delay=".5s">WEEKLY GROUP ENTERTAINMENT AND EXCURSIONS</h4>
-                            <p class="section-travel-opportunities__subtitle wow fadeInRight" data-wow-delay=".7s">
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut    labore et sdolore magna aliqua. Ut enim ad minim veniam.
-                            </p>
-                             <h6 class="heading-6 wow fadeInRight" data-wow-delay=".8s">VIEW PHOTOS</h6>
-                        </div>
+                <h2 class="heading-2 margin-bottom-small wow fadeInLeft" data-wow-duration="2s">TRAVEL WITH OUR COMPANY
+                </h2>
+                <p class="section-travel-opportunities__paragraph wow fadeInRight" data-wow-duration="2s"
+                    data-wow-delay=".3s">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                </p>
+                <div class="section-travel-opportunities__body">
+                    <div class="section-travel-opportunities__opportunity">
+                        <figure class="section-travel-opportunities__image wow rotateInUpLeft" data-wow-duration="2s"
+                            data-wow-delay=".3s">
+                            <img src="img/travel-opportunities.png" alt="Travel Opportunity 1"
+                                class="section-travel-opportunities__img">
+                        </figure>
+                        <h4 class="heading-4 margin-bottom-medium margin-top-small wow fadeInLeft" data-wow-delay=".5s">
+                            COMFORTABLE PREMIUM CLASS ACCOMMODATIONS</h4>
+                        <p class="section-travel-opportunities__subtitle wow fadeInLeft" data-wow-delay=".7s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et sdolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                        <h6 class="heading-6 wow fadeInLeft" data-wow-delay=".8s">VIEW PHOTOS</h6>
                     </div>
-             </div>    
-         </section>
-         <!-- SECTION TRAVEL OPPORTUNITIES end-->
+                    <div class="section-travel-opportunities__opportunity">
+                        <figure class="section-travel-opportunities__image wow rotateInUpRight" data-wow-duration="2s"
+                            data-wow-delay=".3s">
+                            <img src="img/travel-opportunities-2.png" alt="Travel Opportunity 2"
+                                class="section-travel-opportunities__img">
+                        </figure>
+                        <h4 class="heading-4 margin-bottom-medium margin-top-small wow fadeInRight"
+                            data-wow-delay=".5s">WEEKLY GROUP ENTERTAINMENT AND EXCURSIONS</h4>
+                        <p class="section-travel-opportunities__subtitle wow fadeInRight" data-wow-delay=".7s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et sdolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                        <h6 class="heading-6 wow fadeInRight" data-wow-delay=".8s">VIEW PHOTOS</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION TRAVEL OPPORTUNITIES end-->
 
-         <!-- SECTION ADVENTURE start-->
-         <section class="section-adventure">
+        <!-- SECTION ADVENTURE start-->
+        <section class="section-adventure">
             <div class="container">
                 <div class="section-adventure__body">
-                    <picture class="section-adventure__image margin-right-huge wow bounceInLeft" data-wow-duration="2s" data-wow-delay=".9s">
-                            <source media="(max-width: 48rem)" srcset="img/adventure-small.png">
-                            <source media="(min-width: 50rem)" srcset="img/adventure.png">
-                            <img src="img/adventure.png" alt="Adventure" class="section-adventure__img">
-                   </picture>
-                    <div class="section-adventure__block-text wow bounceInRight" data-wow-duration="2s" data-wow-delay=".9s">
+                    <picture class="section-adventure__image margin-right-huge wow bounceInLeft" data-wow-duration="2s"
+                        data-wow-delay=".9s">
+                        <source media="(max-width: 48rem)" srcset="img/adventure-small.png">
+                        <source media="(min-width: 50rem)" srcset="img/adventure.png">
+                        <img src="img/adventure.png" alt="Adventure" class="section-adventure__img">
+                    </picture>
+                    <div class="section-adventure__block-text wow bounceInRight" data-wow-duration="2s"
+                        data-wow-delay=".9s">
                         <h5 class="heading-5 margin-bottom-small">Next Tour</h5>
-                        <h3 class="heading-3 heading-3--dark margin-bottom-medium">UNFORGETTABLE ADVENTURE IN FILIPINAS</h3>
+                        <h3 class="heading-3 heading-3--dark margin-bottom-medium">UNFORGETTABLE ADVENTURE IN FILIPINAS
+                        </h3>
                         <p class="section-adventure__paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Ac turpis egestas integer eget. Felis bibendum ut tristique et egestas quis ipsu. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium
+                            fusce. Ac turpis egestas integer eget. Felis bibendum ut tristique et egestas quis ipsu.
                         </p>
                         <p class="section-adventure__paragraph">
-                            sa massa ultricies mi quis hendrerit dolor magna. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Lectus arcu bibendum at varius. In massa tempor nec feugiat nisl. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Adipiscing elit ut aliquam purus. Nunc pulvinar sapien et ligula ullam
+                            sa massa ultricies mi quis hendrerit dolor magna. Facilisis leo vel fringilla est
+                            ullamcorper eget nulla facilisi etiam. Lectus arcu bibendum at varius. In massa tempor nec
+                            feugiat nisl. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.
+                            Adipiscing elit ut aliquam purus. Nunc pulvinar sapien et ligula ullam
                         </p>
                         <p class="section-adventure__paragraph">
-                            Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Mauris rhoncus aenean vel elit scelerisque mauris. Pretium vulputate sapien nec sagittis aliquam malesuada. Lectus magna fringilla urna porttitor rhoncus dolor purus. 
+                            Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Mauris rhoncus aenean vel elit
+                            scelerisque mauris. Pretium vulputate sapien nec sagittis aliquam malesuada. Lectus magna
+                            fringilla urna porttitor rhoncus dolor purus.
                         </p>
                     </div>
-                </div>                   
+                </div>
             </div>
-         </section>
-         <!-- SECTION ADVENTURE  end-->
+        </section>
+        <!-- SECTION ADVENTURE  end-->
 
-         <!-- SECTION BOOK  start-->
-         <section class="section-book">
-             <div class="container">
-                 <div class="section-book__body">
-                     <div class="section-book__text margin-right-medium wow bounceInLeft" data-wow-duration="2s">
+        <!-- SECTION BOOK  start-->
+        <section class="section-book">
+            <div class="container">
+                <div class="section-book__body">
+                    <div class="section-book__text margin-right-medium wow bounceInLeft" data-wow-duration="2s">
                         <h3 class="heading-3 margin-bottom-smallest">BOOK A DISCOUNTER TOUR</h3>
                         <p class="section-book__paragpaph">
-                           Mauris ultrices eros in cursus turpis 
+                            Mauris ultrices eros in cursus turpis
                         </p>
-                     </div>
-                     <form class="book-form wow bounceInRight" data-wow-duration="2s">
+                    </div>
+                    <form class="book-form wow bounceInRight" data-wow-duration="2s">
                         <div class="book-form__group">
-                            <input type="text" name="username" class="book-form__input" placeholder="Name" id="name" required>
+                            <input type="text" name="username" class="book-form__input" placeholder="Name" id="name"
+                                required>
                             <label for="name" class="book-form__label">Name</label>
                         </div>
                         <div class="book-form__group">
-                            <input type="email" name="useremail" class="book-form__input" id="email" placeholder="Email" required>
+                            <input type="email" name="useremail" class="book-form__input" id="email" placeholder="Email"
+                                required>
                             <label for="email" class="book-form__label">Email</label>
                         </div>
                         <div class="book-form__group">
@@ -232,30 +358,31 @@
                         </div>
                     </form>
                 </div>
-             </div>
-         </section>
-         <!-- SECTION BOOK  end-->
+            </div>
+        </section>
+        <!-- SECTION BOOK  end-->
 
-         <!-- Footer  start-->
-         <footer class="footer">
-             <nav class="footer-nav">
-                 <ul class="footer-nav__items wow bounceInUp" data-wow-duration="2s">
-                     <li class="footer-nav__item"><a href="#" class="footer-nav__link">Home</a></li>
-                     <li class="footer-nav__item"><a href="#" class="footer-nav__link">About</a></li>
-                     <li class="footer-nav__item"><a href="#" class="footer-nav__link">Gallery</a></li>
-                     <li class="footer-nav__item"><a href="#" class="footer-nav__link">Travel</a></li>
-                 </ul>
-             </nav>
-             <div class="footer__rights wow bounceInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                 <h5 class="heading-5 heading-5--dark">Business travel</h5>
-                 <p class="footer__paragraph">Travel 2019 | All rights reserved</p>
-             </div>
-         </footer>
-         <!-- Footer  finish-->
-     </main>
-     <script src="js/wow.min.js"></script>
-     <script>
-        new WOW( {mobile: false} ).init();
-    </script>  
-    </body> 
-    </html>
+        <!-- Footer  start-->
+        <footer class="footer">
+            <nav class="footer-nav">
+                <ul class="footer-nav__items wow bounceInUp" data-wow-duration="2s">
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Home</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">About</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Gallery</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Travel</a></li>
+                </ul>
+            </nav>
+            <div class="footer__rights wow bounceInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                <h5 class="heading-5 heading-5--dark">Business travel</h5>
+                <p class="footer__paragraph">Travel 2019 | All rights reserved</p>
+            </div>
+        </footer>
+        <!-- Footer  finish-->
+    </main>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW({ mobile: false }).init();
+    </script>
+</body>
+
+</html>
