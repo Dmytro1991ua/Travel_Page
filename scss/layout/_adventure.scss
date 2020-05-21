@@ -1,0 +1,56 @@
+.section-adventure {
+    padding-bottom: 9rem;
+
+    @include respond(phone) {
+        padding-bottom: 4rem;
+    }
+
+
+    &__body {
+        @include display-flex;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+        transition: all .4s ease;
+    }
+
+    &__img:hover {
+        @include scaledImg;
+    }
+
+    &__block-text {
+        @include display-flex;
+
+        flex-direction: column;
+
+        @include respond(phone) {
+            align-items: center;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 1.1px;
+        max-width: 80rem;
+        color: $color-paragraph;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+
+            @include respond(phone) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.section-info {
+    padding: 3.5rem 0 8rem 0;
+
+    &__body {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__block-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include respond(phone) {
+            align-items: center;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 1.1px;
+        max-width: 80rem;
+        color: $color-paragraph;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+
+            @include respond(phone) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    &__illustration {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        max-width: 100%; // make our img to be responsive
+        height: auto; // make our img to be responsive
+        display: block;
+        transition: all .4s ease;
+    }
+
+    &__img:hover {
+        @include scaledImg;
+    }
+}

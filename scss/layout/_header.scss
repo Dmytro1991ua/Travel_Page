@@ -1,0 +1,94 @@
+//Header
+
+.header {
+    background-image: url(../img/bg-header-small.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 48em), (min-width: 120em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 48em) {
+        background: url(../img/bg-header.png) (center / cover) no-repeat;
+    }
+
+    // Media links
+
+    &__media {
+        @include display-flex;
+
+        position: absolute;
+        top: 50%;
+        right: -8.5%;
+        transform: rotate(90deg);
+        animation: moveToTopMedia 1.2s cubic-bezier(0.75, -0.21, 0.17, 1.07) 1.2s;
+        animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            animation: none;
+        }
+
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &__media-icons {
+        display: none;
+
+        @include respond(phone) {
+            @include display-flex;
+
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            right: 0;
+            transform: rotate(0) translate(-50%, -50%);
+            animation: none;
+        }
+    }
+
+    &__media-icon {
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__info {
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: $color-white;
+        letter-spacing: 2.8px;
+        display: inline-block;
+        transition: all 0.5s ease-in;
+    }
+
+    &__link:hover {
+        transform: rotate(-90deg) scale(1.12) translateX(-3rem);
+        box-shadow: 1rem 1rem 3rem rgba($color-black, 0.5);
+    }
+
+    //Main info
+
+    &__main-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

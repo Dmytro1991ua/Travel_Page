@@ -1,0 +1,59 @@
+.nav {
+	padding-top: 2rem;
+	animation: moveToDown 1s cubic-bezier(0.75,-0.21, 0.17, 1.07) 1.2s;
+	animation-fill-mode: backwards;
+
+      @include respond(tab-port) {
+      	animation: none;
+      }
+
+
+	&__items {
+		@include display-flex;
+	}
+
+	&__item {
+		list-style: none;
+		font-size: 1.5rem;
+
+		&:not(:last-child) {
+			margin-right: 6rem;
+		}
+	}
+
+	&__link:link,
+	&__link:visited {
+		text-decoration: none;
+		color: $color-white;
+		display: inline-block;
+		transition: all .4s;
+		position: relative;
+	}
+
+	&__link::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 0%;
+		margin: auto;
+		height: 1px;
+		background-color: $color-white;
+		transition: all .8s;
+	}
+
+
+
+	&__link:hover {
+		//transform: translateY(.8rem) skewX(15deg) scale(1.5);
+		animation: heartBeat .6s infinite;
+	}
+
+	&__link:hover::after {
+		//width: 100%;
+	}
+
+}
+
+

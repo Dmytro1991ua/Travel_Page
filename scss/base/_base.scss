@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+
+	@include respond(tab-land) {
+		font-size: 58.5%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 53%;
+	}
+
+	@include respond(phone) {
+		font-size: 50%;
+	}  
+
+	@include respond(laptop-big) {
+		font-size: 75%;
+	}
+
+	@include respond(laptop-huge) {
+		font-size: 100%;
+	}
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+
+}

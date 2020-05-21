@@ -1,0 +1,52 @@
+.section-travel-opportunities {
+    padding: 8.5rem 0;
+
+    @include respond(phone) {
+        padding: 4rem 0;
+    }
+
+
+    &__paragraph {
+        @include paragraph-style;
+    }
+
+    &__body {
+        @include display-flex;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+        transition: all .4s ease;
+    }
+
+    &__img:hover {
+        @include scaledImg;
+    }
+
+    &__subtitle {
+        font-size: 1.18rem;
+        font-weight: 400;
+        letter-spacing: 1.8px;
+        line-height: 2rem;
+        max-width: 43rem;
+        color: $color-paragraph-light;
+        margin-bottom: 4rem;
+
+        @include respond(phone) {
+            margin-bottom: 2rem;
+        }
+    }
+}

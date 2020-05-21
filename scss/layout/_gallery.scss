@@ -1,0 +1,65 @@
+.section-gallery {
+    padding-top: 5rem;
+
+    &__paragraph {
+        @include paragraph-style;
+    }
+
+    &__line {
+        @include display-flex;
+
+        @include respond(phone) {
+            display: block;
+        }
+    }
+
+    &__image {
+        position: relative;
+        overflow: hidden;
+
+        & > * {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: all .4s ease;
+
+            @include respond(phone) {
+                max-width: none;
+                width: 100%;
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+
+            @include respond(phone) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__caption {
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        text-align: center;
+        transition: all .3s;
+        backface-visibility: hidden;
+    }
+
+    &__caption:hover {
+        opacity: 1;
+        top: 50%;
+    }
+
+    &__img:hover {
+        @include scaledImg;
+    }
+}

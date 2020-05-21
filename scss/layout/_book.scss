@@ -1,0 +1,47 @@
+.section-book {
+   padding-bottom: 15rem;
+
+    @include respond(phone) {
+			padding-bottom: 4.5rem;
+		}
+
+
+	&__body {
+		display: flex;
+		justify-content: space-around;
+
+		@include respond(phone) {
+			flex-direction: column;
+			align-items: stretch;
+		}
+
+
+		&:last-child {
+			padding-right: .7rem;
+
+			@include respond(phone) {
+			  padding-right: 0;
+		  }
+
+		}
+	}
+
+	&__text {
+		@include display-flex;
+		flex-direction: column;
+
+		@include respond(phone) {
+			align-items: center;
+			margin-bottom: 2rem;
+		}
+
+	}
+
+	&__paragpaph {
+		font-size: 1.2rem;
+		font-weight: 400;
+		letter-spacing: 1.32px;
+		color: $color-paragraph;
+	}
+
+}

@@ -1,0 +1,82 @@
+.btn {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color-white;
+    border: none;
+    background-color: transparent;
+    padding: 1.4rem  7.4rem;
+    letter-spacing: 2.52px;
+    cursor: pointer;
+    transition: all .5s;
+    display: inline-block;
+    animation-fill-mode: backwards;
+
+    @include respond(phone) {
+        font-size: 1.4rem;
+    }
+
+
+    &--light {
+        border: 2px solid $color-white;
+        animation: moveToTop 1s cubic-bezier(0.75, -0.21, 0.17, 1.07) 0.7s;
+
+        @include respond(tab-port) {
+            animation: none;
+        }
+    }
+
+    &--dark {
+        color: $color-black;
+        border: 2px solid $color-black;
+
+        @include respond(phone) {
+            margin-top: 1rem;
+        }
+    }
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.6);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.6);
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+}
+
+// Button for FORM
+.btn-form {
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    padding: 0 4.5rem;
+    border: 1px solid $color-input-background;
+    background-color: $color-placeholder;
+    color: $color-white;
+    height: 5.2rem;
+    width: 100%;
+    cursor: pointer;
+    transition: all .4s ease-in;
+
+    &:hover {
+        transform: translateY(-0.4rem);
+        box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 0.4rem .7rem rgba($color-black, 0.4);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
