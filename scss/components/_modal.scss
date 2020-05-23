@@ -1,0 +1,145 @@
+.modal {
+    &__body {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background-color: $color-springSun;
+        transition: 200ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        padding: 1.3rem 2rem;
+        border-radius: 5px;
+
+        @include respond(tab-port) {
+            width: 80%;
+        }
+
+
+        @include respond(tab-port) {
+            width: 85%;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: -1.5%;
+        right: -29%;
+        text-decoration: none;
+        background-color: $color-springSun;
+        color: $color-black;
+        font-size: 3rem;
+        font-weight: 600;
+        border-radius: 50%;
+        padding: .3rem 1.6rem .8rem 1.6rem;
+        cursor: pointer;
+        transition: all .4s ease;
+
+        @include respond(tab-port) {
+            top: -5.5%;
+            right: -8%;
+        }
+
+
+        @include respond(phone) {
+            top: -8.5%;
+            right: -7%;
+        }
+
+
+        @include respond(tiny-phone) {
+            top: -16.5%;
+            right: -5%;
+        }
+    }
+
+    &__close:hover {
+        transform: scale(1.1);
+    }
+
+    &__img {
+        overflow: hidden;
+        padding-bottom: 1.5rem;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+            transition: all .1s ease;
+        }
+    }
+
+    &__img:hover img {
+        transform: scale(1.1);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        padding-bottom: 1.2rem;
+    }
+
+    &__info {
+        max-width: 35rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding-bottom: 1.3rem;
+        text-align: center;
+    }
+
+    &__link:link,
+    &__link:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 1.3rem 1.5rem 1.3rem 1.5rem;
+        background-color: $color-pictonBlue;
+        color: $color-black;
+        border-radius: 5px;
+        transition: all .4s ease;
+    }
+
+    &__link:hover {
+        font-weight: 700;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+        transform: translateY(-0.3rem);
+    }
+
+    &__link:active {
+        box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.5);
+        transform: translateY(0rem);
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 200ms ease-in-out;
+        z-index: 5;
+        display: none;
+    }
+}
+
+.modal__overlay.active {
+    display: block;
+    pointer-events: all; /*The pointer-events CSS property sets under what circumstances (if any) a particular graphic element can become the target of pointer events. */
+    overflow: scroll;
+}
+
+.modal__body.active {
+    transform: translate(-50%, -50%) scale(1);
+}

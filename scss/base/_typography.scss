@@ -1,89 +1,102 @@
 .heading-1 {
-	font-size: 7rem;
-	font-weight: 700;
-	color: $color-white;
+    font-size: 7rem;
+    font-weight: 700;
+    color: $color-white;
 
-	@include respond(phone) {
-		font-size: 4rem;
-	}  
+    @include respond(phone) {
+        font-size: 4rem;
+    }
 
 
-	&--main {
-		display: inline-block;
-		animation: moveToRight 1s cubic-bezier(0.75,-0.21, 0.17, 1.07) 0.3s;
+    &--main {
+        display: inline-block;
+        animation: moveToRight 1s cubic-bezier(0.75, -0.21, 0.17, 1.07) 0.3s;
 
-		 @include respond(tab-port) {
-			animation: none;
-	   }
-
-	}
+        @include respond(tab-port) {
+            animation: none;
+        }
+    }
 }
 
 .heading-2 {
-	font-size: 2rem;
-	font-weight: 700;
-	letter-spacing: 4.2px;
-	text-transform: uppercase;
-	text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .heading-3 {
-	font-size: 1.8rem;
-	letter-spacing: 2.2px;
+    font-size: 1.8rem;
+    letter-spacing: 2.2px;
 
-	@include respond(phone) {
-		font-size: 1.5rem;
-	} 
+    @include respond(phone) {
+        font-size: 1.5rem;
+    }
 
-	&--white {
-		color: $color-white;
-	}
 
-	&--dark {
-		color: $color-black;
-		font-weight: 500;
-	}
+    &--white {
+        color: $color-white;
+    }
 
-	&--main {
-		display: inline-block;
-		animation: moveToLeft 1s cubic-bezier(0.75,-0.21, 0.17, 1.07) 0.5s;
+    &--dark {
+        color: $color-black;
+        font-weight: 500;
 
-		 @include respond(tab-port) {
-			animation: none;
-	   }
-	}
+        @include respond(tiny-phone) {
+            text-align: center;
+        }
+    }
+
+    &--main {
+        display: inline-block;
+        animation: moveToLeft 1s cubic-bezier(0.75, -0.21, 0.17, 1.07) 0.5s;
+
+        @include respond(tab-port) {
+            animation: none;
+        }
+    }
 }
 
 .heading-4 {
-	font-size: 1.4rem;
-	font-weight: 700;
-	letter-spacing: 1.3px;
-}	
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+
+    @include respond(tiny-phone) {
+        text-align: center;
+    }
+}
 
 .heading-5 {
-	font-size: 1.3rem;
-	font-weight: 500;
-	letter-spacing: 1.08px;
-	color: $color-about-us;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1.08px;
+    color: $color-about-us;
 
-	&--dark {
-		color: $color-black;
-		letter-spacing: 3.12px;
-		font-weight: 400;
-		text-transform: uppercase;
-		text-align: center;
-	}
+    &--dark {
+        color: $color-black;
+        letter-spacing: 3.12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
 
 .heading-6 {
-	font-size: 1.2rem;
-	font-weight: 400;
-	letter-spacing: 1.3px;
-	line-height: 2rem;
-	color: $color-black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    line-height: 2rem;
+    color: $color-black;
+    cursor: pointer;
 
-	@include respond(phone) {
-		 margin-bottom: 2rem;
-	}
+    @include respond(phone) {
+        margin-bottom: 2rem;
+    }
+
+
+    @include respond(tiny-phone) {
+        text-align: center;
+    }
 }
-

@@ -1,6 +1,11 @@
 .section-info {
     padding: 3.5rem 0 8rem 0;
 
+    @include respond(phone) {
+        padding: 3.5rem 0 3rem 0;
+    }
+
+
     &__body {
         display: flex;
         flex-direction: row-reverse;
@@ -29,6 +34,11 @@
         letter-spacing: 1.1px;
         max-width: 80rem;
         color: $color-paragraph;
+
+        @include respond(tiny-phone) {
+            text-align: center;
+        }
+
 
         &:not(:last-child) {
             margin-bottom: 3rem;

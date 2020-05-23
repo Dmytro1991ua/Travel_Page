@@ -1,34 +1,34 @@
 .container {
-	width: 100%;
-   max-width: 120rem;
-	margin: 0 auto;
-	padding: 0 1.5rem;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 
-	@include respond(tab-land) {
-		max-width: 97rem;
-	}
-
-	@include respond(tab-port) {
-		max-width: 85rem;
-	}
-
-	@include respond(phone) {
-		max-width: none;
-	}
-
-	@include respond(laptop-big) {
-		width: 110rem;
-	}
-
-	@include respond(laptop-medium) {
-		width: 130rem;
-	}
-
-	@include respond(laptop-huge) {
-		width: 167.3rem;
-	}
+    @include respond(tab-land) {
+        max-width: 97rem;
+    }
 
 
+    @include respond(tab-port) {
+        max-width: 85rem;
+    }
+
+    @include respond(phone) {
+        max-width: none;
+    }
 
 
+    @include respond(laptop-big) {
+        width: 110rem;
+    }
+
+
+    @include respond(laptop-medium) {
+        width: 130rem;
+    }
+
+
+    @include respond(laptop-huge) {
+        width: 167.3rem;
+    }
 }

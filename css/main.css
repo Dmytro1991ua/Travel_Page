@@ -2701,10 +2701,7 @@ html {
       font-size: 58.5%; } }
   @media only screen and (max-width: 62em) {
     html {
-      font-size: 53%; } }
-  @media only screen and (max-width: 48em) {
-    html {
-      font-size: 50%; } }
+      font-size: 55%; } }
   @media only screen and (min-width: 87.5em) {
     html {
       font-size: 75%; } }
@@ -2715,6 +2712,9 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box; }
+
+body.lock {
+  overflow: hidden; }
 
 .heading-1 {
   font-size: 7rem;
@@ -2748,6 +2748,9 @@ body {
   .heading-3--dark {
     color: #000000;
     font-weight: 500; }
+    @media only screen and (max-width: 33em) {
+      .heading-3--dark {
+        text-align: center; } }
   .heading-3--main {
     display: inline-block;
     animation: moveToLeft 1s cubic-bezier(0.75, -0.21, 0.17, 1.07) 0.5s; }
@@ -2759,6 +2762,9 @@ body {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 1.3px; }
+  @media only screen and (max-width: 33em) {
+    .heading-4 {
+      text-align: center; } }
 
 .heading-5 {
   font-size: 1.3rem;
@@ -2777,10 +2783,14 @@ body {
   font-weight: 400;
   letter-spacing: 1.3px;
   line-height: 2rem;
-  color: #000000; }
+  color: #000000;
+  cursor: pointer; }
   @media only screen and (max-width: 48em) {
     .heading-6 {
       margin-bottom: 2rem; } }
+  @media only screen and (max-width: 33em) {
+    .heading-6 {
+      text-align: center; } }
 
 .margin-bottom-smallest {
   margin-bottom: 1.5rem; }
@@ -2937,6 +2947,126 @@ body {
     visibility: hidden;
     transform: translateY(-4rem); }
 
+.modal__body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #f2f1c4;
+  transition: 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding: 1.3rem 2rem;
+  border-radius: 5px; }
+  @media only screen and (max-width: 62em) {
+    .modal__body {
+      width: 80%; } }
+  @media only screen and (max-width: 62em) {
+    .modal__body {
+      width: 85%; } }
+
+.modal__close {
+  position: absolute;
+  top: -1.5%;
+  right: -29%;
+  text-decoration: none;
+  background-color: #f2f1c4;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 600;
+  border-radius: 50%;
+  padding: .3rem 1.6rem .8rem 1.6rem;
+  cursor: pointer;
+  transition: all .4s ease; }
+  @media only screen and (max-width: 62em) {
+    .modal__close {
+      top: -5.5%;
+      right: -8%; } }
+  @media only screen and (max-width: 48em) {
+    .modal__close {
+      top: -8.5%;
+      right: -7%; } }
+  @media only screen and (max-width: 33em) {
+    .modal__close {
+      top: -16.5%;
+      right: -5%; } }
+
+.modal__close:hover {
+  transform: scale(1.1); }
+
+.modal__img {
+  overflow: hidden;
+  padding-bottom: 1.5rem; }
+  .modal__img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: all .1s ease; }
+
+.modal__img:hover img {
+  transform: scale(1.1); }
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.modal__title {
+  font-size: 1.6rem;
+  padding-bottom: 1.2rem; }
+
+.modal__info {
+  max-width: 35rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-bottom: 1.3rem;
+  text-align: center; }
+
+.modal__link:link, .modal__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 1.3rem 1.5rem 1.3rem 1.5rem;
+  background-color: #34e8eb;
+  color: #000000;
+  border-radius: 5px;
+  transition: all .4s ease; }
+
+.modal__link:hover {
+  font-weight: 700;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+  transform: translateY(-0.3rem); }
+
+.modal__link:active {
+  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.5);
+  transform: translateY(0rem); }
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 200ms ease-in-out;
+  z-index: 5;
+  display: none; }
+
+.modal__overlay.active {
+  display: block;
+  pointer-events: all;
+  /*The pointer-events CSS property sets under what circumstances (if any) a particular graphic element can become the target of pointer events. */
+  overflow: scroll; }
+
+.modal__body.active {
+  transform: translate(-50%, -50%) scale(1); }
+
 .slider__pages {
   text-align: center;
   font-size: 1.6rem;
@@ -3005,6 +3135,9 @@ body {
       @media only screen and (max-width: 48em) {
         .section-adventure__paragraph:not(:last-child) {
           margin-bottom: 1.5rem; } }
+      @media only screen and (max-width: 33em) {
+        .section-adventure__paragraph:not(:last-child) {
+          text-align: center; } }
 
 .section-book {
   padding-bottom: 15rem; }
@@ -3159,6 +3292,9 @@ body {
 
 .section-gallery {
   padding-top: 5rem; }
+  @media only screen and (max-width: 33em) {
+    .section-gallery {
+      padding: 0 1rem; } }
   .section-gallery__paragraph {
     max-width: 70rem;
     margin: 0 auto;
@@ -3177,7 +3313,8 @@ body {
     align-items: center; }
     @media only screen and (max-width: 48em) {
       .section-gallery__line {
-        display: block; } }
+        display: block;
+        margin-bottom: 0; } }
   .section-gallery__image {
     position: relative;
     overflow: hidden; }
@@ -3192,18 +3329,17 @@ body {
           width: 73%;
           margin: 0 auto;
           display: block;
-          margin-bottom: 1.4rem; } }
+          margin-bottom: 2.3rem; } }
       @media only screen and (max-width: 33em) {
         .section-gallery__image > * {
           max-width: none;
-          width: 100%;
-          display: inline-block;
-          margin-bottom: 1rem; } }
+          width: 100%; } }
     .section-gallery__image:not(:last-child) {
       margin-right: 1.5rem; }
       @media only screen and (max-width: 48em) {
         .section-gallery__image:not(:last-child) {
-          margin-right: 0; } }
+          margin-right: 0;
+          margin-bottom: 0; } }
   .section-gallery__caption {
     position: absolute;
     top: 0;
@@ -3229,8 +3365,8 @@ body {
       .section-gallery__caption {
         width: 100%; } }
   .section-gallery__title {
-    font-size: 1.7rem;
-    padding-bottom: 1rem; }
+    font-size: 2.3rem;
+    padding-bottom: 3rem; }
     @media only screen and (max-width: 62em) {
       .section-gallery__title {
         padding-bottom: .5rem;
@@ -3239,33 +3375,14 @@ body {
       .section-gallery__title {
         padding-bottom: 2rem;
         font-size: 2rem; } }
-  .section-gallery__info {
-    max-width: 20rem;
-    font-size: 1.4rem;
-    text-align: center;
-    line-height: 1.5;
-    padding-bottom: 2rem; }
-    @media only screen and (max-width: 62em) {
-      .section-gallery__info {
-        padding-bottom: 1.3rem; } }
-    @media only screen and (max-width: 48em) {
-      .section-gallery__info {
-        padding-bottom: 2.3rem;
-        font-size: 1.6rem; } }
   .section-gallery__btn:link, .section-gallery__btn:visited {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 1.3rem 1.3rem 1.3rem 1.3rem;
     background-color: rgba(255, 119, 48, 0.8);
     color: #ffffff;
     border-radius: 5px;
     transition: all .4s ease; }
-    @media only screen and (max-width: 62em) {
-      .section-gallery__btn:link, .section-gallery__btn:visited {
-        margin-bottom: 1rem; } }
-    @media only screen and (max-width: 48em) {
-      .section-gallery__btn:link, .section-gallery__btn:visited {
-        margin-bottom: 0rem; } }
   .section-gallery__btn:hover {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
     transform: translateY(-0.4rem); }
@@ -3278,6 +3395,9 @@ body {
 
 .section-info {
   padding: 3.5rem 0 8rem 0; }
+  @media only screen and (max-width: 48em) {
+    .section-info {
+      padding: 3.5rem 0 3rem 0; } }
   .section-info__body {
     display: flex;
     flex-direction: row-reverse;
@@ -3300,6 +3420,9 @@ body {
     letter-spacing: 1.1px;
     max-width: 80rem;
     color: #5b5b5c; }
+    @media only screen and (max-width: 33em) {
+      .section-info__paragraph {
+        text-align: center; } }
     .section-info__paragraph:not(:last-child) {
       margin-bottom: 3rem; }
       @media only screen and (max-width: 48em) {
@@ -3423,3 +3546,6 @@ body {
     @media only screen and (max-width: 48em) {
       .section-travel-opportunities__subtitle {
         margin-bottom: 2rem; } }
+    @media only screen and (max-width: 33em) {
+      .section-travel-opportunities__subtitle {
+        text-align: center; } }

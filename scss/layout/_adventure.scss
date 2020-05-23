@@ -51,6 +51,11 @@
             @include respond(phone) {
                 margin-bottom: 1.5rem;
             }
+
+
+            @include respond(tiny-phone) {
+                text-align: center;
+            }
         }
     }
 }
