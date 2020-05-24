@@ -47,4 +47,19 @@ overlay.addEventListener("click", () => {
    modals.forEach(modal => {
       closeModal(modal);
    });
-}); 
+});
+
+// Scroll to top Btn
+
+function scrollToTop() {
+   window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+   })
+}
+
+window.addEventListener("scroll", () => {
+   const scroll = document.querySelector(".scrollToTop");
+   scroll.classList.toggle("active", window.scrollY > 400);
+
+});

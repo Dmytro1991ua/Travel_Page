@@ -1,75 +1,96 @@
 .footer {
-	padding-bottom: 6.5rem;
+    padding-bottom: 6.5rem;
 
-	 @include respond(phone) {
-			padding-bottom: 3.5rem;
-		}
+    @include respond(phone) {
+        padding-bottom: 3.5rem;
+    }
 
-	&__rights {
-		padding-top: 3.5rem;
-	}
 
-	&__paragraph {
-		font-size: 1.3rem;
-		font-weight: 400;
-		text-transform: uppercase;
-		text-align: center;
-		padding: 1.4rem;
-		letter-spacing: 1.42px;
-	}
+    &__rights {
+        padding-top: 3.5rem;
+    }
 
+    &__paragraph {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.4rem;
+        letter-spacing: 1.42px;
+    }
 }
 
 .footer-nav {
+    &__items {
+        @include display-flex;
 
-	&__items {
-		@include display-flex;
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
 
-		 @include respond(phone) {
-			flex-direction: column;
-		}
+    &__item {
+        list-style: none;
 
-	}
+        &:not(:last-child) {
+            margin-right: 3.6rem;
 
-	&__item {
-		list-style: none;
+            @include respond(phone) {
+                margin-right: 0;
+                margin-bottom: 1.7rem;
+            }
+        }
+    }
 
-		&:not(:last-child) {
-			margin-right: 3.6rem;
+    &__link:link,
+    &__link:visited {
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 1.3px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-black;
+        cursor: pointer;
+        display: inline-block;
+        transition: all .2s ease-in;
 
-			 @include respond(phone) {
-			   margin-right: 0;
-			   margin-bottom: 1.7rem;
+        &:hover {
+            transform: translateY(-0.5rem) skewX(-10deg);
+            box-shadow: 0 1rem 1rem rgba($color-black, 0.3);
+            background-color: $color-light-green;
+            color: $color-white;
+            font-weight: 700;
+            animation: heartBeat .4s 4 .6s;
+        }
 
-		   }
-		}
-	}
+        &:active {
+            transform: translateY(0rem) skewX(0deg);
+            box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.3);
+        }
+    }
+}
 
-	&__link:link,
-	&__link:visited{
-		font-size: 1.6rem;
-		font-weight: 400;
-		letter-spacing: 1.3px;
-		text-decoration: none;
-		text-transform: uppercase;
-		color: $color-black;
-		cursor: pointer;
-		display: inline-block;
-		transition: all .2s ease-in;
+.scrollToTop {
+    position: fixed;
+    bottom: 8%;
+    right: 1%;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: $color-light-green url(../../img/up.png);
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 4;
+    transition: opacity .7s ease-out;
+    animation: pulsate 1.3s infinite;
+}
 
-		&:hover {
-			transform: translateY(-.5rem) skewX(-10deg);
-			box-shadow: 0 1rem 1rem rgba($color-black, .3);
-			background-color: $color-light-green;
-			color: $color-white;
-			font-weight: 700;
-			animation: heartBeat .4s 4 .6s;
-		}
-
-		&:active {
-			transform: translateY(0rem) skewX(0deg);
-			box-shadow: 0 .5rem .5rem rgba($color-black, .3);
-		}	
-	}
-
+.scrollToTop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
 }

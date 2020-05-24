@@ -3290,6 +3290,29 @@ body.lock {
     transform: translateY(0rem) skewX(0deg);
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3); }
 
+.scrollToTop {
+  position: fixed;
+  bottom: 8%;
+  right: 1%;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: #90ee90 url(../../img/up.png);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 4;
+  transition: opacity .7s ease-out;
+  animation: pulsate 1.3s infinite; }
+
+.scrollToTop.active {
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1; }
+
 .section-gallery {
   padding-top: 5rem; }
   @media only screen and (max-width: 33em) {
