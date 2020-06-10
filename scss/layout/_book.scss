@@ -1,47 +1,47 @@
 .section-book {
-   padding-bottom: 15rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    background-color: $color-input-background;
 
     @include respond(phone) {
-			padding-bottom: 4.5rem;
-		}
+        padding-bottom: 4.5rem;
+    }
 
 
-	&__body {
-		display: flex;
-		justify-content: space-around;
+    &__body {
+        display: flex;
+        justify-content: space-around;
 
-		@include respond(phone) {
-			flex-direction: column;
-			align-items: stretch;
-		}
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: stretch;
+        }
 
 
-		&:last-child {
-			padding-right: .7rem;
+        &:last-child {
+            padding-right: .7rem;
 
-			@include respond(phone) {
-			  padding-right: 0;
-		  }
+            @include respond(phone) {
+                padding-right: 0;
+            }
+        }
+    }
 
-		}
-	}
+    &__text {
+        @include display-flex;
 
-	&__text {
-		@include display-flex;
-		flex-direction: column;
+        flex-direction: column;
 
-		@include respond(phone) {
-			align-items: center;
-			margin-bottom: 2rem;
-		}
+        @include respond(phone) {
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+    }
 
-	}
-
-	&__paragpaph {
-		font-size: 1.2rem;
-		font-weight: 400;
-		letter-spacing: 1.32px;
-		color: $color-paragraph;
-	}
-
+    &__paragpaph {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 1.32px;
+        color: $color-paragraph;
+    }
 }

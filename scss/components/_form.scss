@@ -1,66 +1,66 @@
 .book-form {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
+    
 
-	@include respond(phone) {
-			flex-direction: column;
-		}
+    @include respond(phone) {
+        flex-direction: column;
+    }
 
 
-	&__group:not(:last-child){
-			margin-right: 3.5rem;
+    &__group:not(:last-child) {
+        margin-right: 3.5rem;
 
-			@include respond(phone) {
-			margin-right: 0;
-		}
+        @include respond(phone) {
+            margin-right: 0;
+        }
+    }
 
-	}
+    &__input {
+        font-family: inherit;
+        width: 100%;
+        height: 5.2rem;
+        color: $color-paragraph-light;
+        display: block;
 
-	&__input {
-		font-family: inherit;
-		width: 100%;
-		height: 5.2rem;
-		color: $color-paragraph-light;
-		display: block;
-		
-		@include respond(phone) {
-			margin-bottom: 1rem;
-		}
+        @include respond(phone) {
+            margin-bottom: 1rem;
+        }
 
-		 &::placeholder {
-		   padding: 1.6rem 0 1.6rem 2.2rem; 
-		   font-size: 1.5rem;
-		   font-weight: 400;
-		   letter-spacing: 1.23px;
-		   color: $color-placeholder;
-		}
 
-		&:focus {
-			outline: none;
-			box-shadow: 0 1rem 2rem rgba($color-black, .3);
-			border: 2px solid $color-light-green;
-		}
+        &::placeholder {
+            padding: 1.6rem 0 1.6rem 2.2rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 1.23px;
+            color: $color-placeholder;
+        }
 
-		&:focus:invalid {
-			border: 2px solid $color-light-orange;
-		}
-	}
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+            border: 2px solid $color-light-green;
+        }
 
-	&__label {
-		font-size: 1.2rem;
-		font-weight: 700;
-		letter-spacing: 1.23px;
-		padding: .7rem;
-		margin-left: -.4rem;
-		margin-top: .3rem;
-		display: block;
-		transition: all .4s ease-in;
+        &:focus:invalid {
+            border: 2px solid $color-light-orange;
+        }
+    }
 
-	}
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 1.23px;
+        padding: .7rem;
+        margin-left: -.4rem;
+        margin-top: .3rem;
+        display: block;
+        transition: all .4s ease-in;
+    }
 
-	&__input:placeholder-shown + &__label { // == this adjacent siblings(соседний селектор - label is a adjacent sibling of input) where adjacent sibling(lable) has to be right after (input) (in HTML markup first  - input and than label) not the oposite (when first label than input)  selector allows us style label not an input (we want label to hidden)
-		opacity: 0;
-		visibility: hidden; //visibility in pair with opacity: 0 allows us to animate this effect
-		transform: translateY(-4rem);
-	}
+    &__input:placeholder-shown + &__label { // == this adjacent siblings(соседний селектор - label is a adjacent sibling of input) where adjacent sibling(lable) has to be right after (input) (in HTML markup first  - input and than label) not the oposite (when first label than input)  selector allows us style label not an input (we want label to hidden)
+        opacity: 0;
+        visibility: hidden; //visibility in pair with opacity: 0 allows us to animate this effect
+        transform: translateY(-4rem);
+    }
 }

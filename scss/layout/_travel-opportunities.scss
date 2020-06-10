@@ -54,4 +54,27 @@
             text-align: center;
         }
     }
+
+    &__link:link,
+    &__link:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 1.3px;
+        line-height: 2rem;
+        color: $color-black;
+        cursor: pointer;
+        padding: 2rem 3rem;
+        background-color: $color-border-light;
+
+        @include respond(phone) {
+            margin-bottom: 2rem;
+        }
+
+
+        @include respond(tiny-phone) {
+            text-align: center;
+        }
+    }
 }

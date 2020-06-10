@@ -1,5 +1,4 @@
 .section-adventure {
-    padding-bottom: 9rem;
 
     @include respond(phone) {
         padding-bottom: 4rem;
@@ -58,4 +57,5 @@
             }
         }
     }
+
 }
